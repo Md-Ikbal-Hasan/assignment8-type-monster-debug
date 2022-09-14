@@ -21,10 +21,12 @@ fetch("./texts.json")
 
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
+  // console.log("clicked");
   const newLetter = e.key;
 
   // Handle backspace press
   if (newLetter == "Backspace") {
+    errorCount++; // track the error.
     userText = userText.slice(0, userText.length - 1);
     return display.removeChild(display.lastChild);
   }
