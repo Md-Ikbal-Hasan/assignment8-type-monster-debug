@@ -151,10 +151,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 5px;
 }
 
 .card {
-  width: 100%;
+  width: 45%;
   height: 100%;
   padding: 50px;
   display: flex;
@@ -191,5 +192,6 @@ button {
 
   .card {
     flex-direction: column;
+    width: 100%;
   }
 }
