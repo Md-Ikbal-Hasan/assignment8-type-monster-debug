@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+
+        button {
+            display: block;
+        }
+
+
+
+        .blog-title {
+            text-align: center;
+            color: green;
+        }
+
+        .que-ans {
+            background-color: rgb(20, 14, 14);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="blog-title">Blog about Javascript core concept</h1>
+    </header>
+
+    <main>
+        <div>
+            <div class="que-ans">
+                <h3 class="question">What is the difference between Local Storage and Session storage?</h3>
+                <p class="answere">SessionStorage is similar to localStorage ; the difference is that while data in
+                    localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever
+                    a document is loaded in a particular tab in the browser, a unique page session gets created and
+                    assigned to that particular tab</p>
+            </div>
+
+            <div class="que-ans">
+                <h3 class="question">What is the difference between global scope and block scope?</h3>
+                <p class="answere">The main difference between the local scope and block scope is that the block
+                    statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword will not
+                    have an effect, because the variables are still in the same scope.</p>
+            </div>
+
+            <div class="que-ans">
+                <h3 class="question">How does Event loop work in Javascript?</h3>
+                <p class="answere">The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue.
+                    If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it
+                    to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                </p>
+            </div>
+
+            <div class="que-ans">
+                <h3 class="question">How many ways we get undefine?</h3>
+
+                <div class="answere">
+                    <p> 8 ways to get Undefine </p>
+                    <ol>
+                        <li>variable that is not initialized will give undefined </li>
+                        <li>function with no return will give undefined </li>
+                        <li>parameter that is not passed will give undefined </li>
+                        <li>return has nothing on the right side will give undefined </li>
+                        <li>property that doesn't exists on an object will give undefined </li>
+                        <li>accessing array elements outside of the index range will give undefined </li>
+                        <li>deleting an element inside an array will give undefined </li>
+                        <li>set a value directly to undefined will give undefined </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
